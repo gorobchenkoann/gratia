@@ -1,0 +1,35 @@
+.header {
+    padding: 65px 40px;
+    background-color: #161b29;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    @include header__link(24px);
+    margin-left: 50px; 
+    margin-right: auto;    
+}
+
+.header__logo-img {
+    margin-right: 15px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-link {
+    @include header__link(16px);
+    margin-right: 70px;
+
+    &:last-child() {
+        margin-right: 0;
+    }
+}
