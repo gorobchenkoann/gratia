@@ -1,6 +1,6 @@
-@import "variables.scss";
-@import "mixins.scss";
-@import "fonts.scss";
-@import "global.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
 
-@import "partials/header.scss";
+@import "blocks/header.scss";
