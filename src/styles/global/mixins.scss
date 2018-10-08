@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+@mixin button() {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $yellow;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: darken($yellow, 15%);
+    }
+}
+
 @mixin section__title-wrap {
     display: flex;
     flex-direction: column;

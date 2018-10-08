@@ -29,25 +29,3 @@ img {
   border: 0;
 }
 
-.btn {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: $yellow;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-
-  &--slider {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: auto;
-    margin-bottom: 50px;
-    border: 1px solid #263045;
-  }
-
-  &--details {
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid #dcdddf;
-  }
-}

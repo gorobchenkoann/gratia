@@ -84,3 +84,12 @@
     color: #485471;
 }
 
+.slider__btn {
+    @include button();
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: auto;
+    margin-bottom: 50px;
+    border: 1px solid #263045;
+}
+
