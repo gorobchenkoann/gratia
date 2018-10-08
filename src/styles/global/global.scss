@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    @include reset();
+    font-family: $montserrat;
+    font-size: 16px;
+}
+
+ul {
+    @include reset();
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $yellow;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+
+  &--slider {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: auto;
+    margin-bottom: 50px;
+    border: 1px solid #263045;
+  }
+
+  &--details {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #dcdddf;
+  }
+}

@@ -1,0 +1,85 @@
+.slider {
+    height: 960px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 80px 40px 40px;
+    background-color: $blue;
+}
+
+.slider__controll {
+    width: 57px;
+    height: 111px;
+    margin-top: 260px;
+    background-color: transparent;
+    border: none;
+
+    &--left {
+        background-image: url('../img/arrow.png'); 
+    }
+    &--right {
+        background-image: url('../img/arrow.png'); 
+        transform: rotate(180deg);
+    }  
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+    }
+}
+
+.slider__inner {
+    display: flex;
+    flex-direction: column;
+
+    &--left {
+        align-items: flex-start;
+    }
+
+    &--center {
+        align-items: center;
+    }
+
+    &--right {
+        align-items: flex-end;
+    }
+}
+
+
+.slider__toggles {
+    margin-top: auto;
+    margin-bottom: 45px;
+}
+
+.slider__toggle {
+    width: 70px;
+    padding: 10px 0;
+    margin-bottom: 70px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  
+    &--active {
+      color: $yellow;
+      border-bottom: 1px solid $yellow;
+    }
+  }
+
+.slider__scroll {
+    margin-top: auto;
+    text-align: center;
+}
+
+.slider__text {
+    @include reset();
+    margin-bottom: 20px;
+    font-family: $crimson;
+    font-size: 24px;
+    font-style: italic;
+    color: #485471;
+}
+
