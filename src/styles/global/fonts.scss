@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|https://fonts.googleapis.com/css?family=Crimson+Text:400i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400i|Gloria+Hallelujah');
 
 @mixin header__link($font-size) {
     font-weight: 700;
@@ -7,15 +7,16 @@
     line-height: 1.5;
 }
 
-@mixin title {    
-    font-size: 48px;
+@mixin title($small: false) {  
+    @if $small  {
+        font-size: 24px;
+    } @else {
+        font-size: 48px;
+    }    
     font-weight: 700;
     line-height: 1.7;
     text-transform: uppercase;
 
-    &--small {
-        font-size: 24px;
-    }
 }
 
 @mixin description {
