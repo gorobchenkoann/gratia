@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|https://fonts.googleapis.com/css?family=Crimson+Text:400i');
 
-@mixin title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.7;
-}
-
 @mixin header__link($font-size) {
     font-weight: 700;
     color: #ffffff;
     font-size: $font-size;
     line-height: 1.5;
+}
+
+@mixin title {    
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-transform: uppercase;
+
+    &--small {
+        font-size: 24px;
+    }
+}
+
+@mixin description {
+    font-size: 18px;
+    font-family: $crimson;
+    font-weight: 400;
+    font-style: italic;
+    color: $gray-text; 
 }
 

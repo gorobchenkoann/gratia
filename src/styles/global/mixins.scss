@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+@mixin section__title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 596px;
+    height: 188px;
+    margin: 0 auto;
+    background: url('../img/title_wrap.png') no-repeat;
+}
