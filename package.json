@@ -22,6 +22,6 @@
     "sass": "^1.14.1"
   },
   "dependencies": {
-    "parcel-plugin-inlinesvg": "file:.."
+    "parcel-plugin-inlinesvg": "0.0.14"
   }
 }
