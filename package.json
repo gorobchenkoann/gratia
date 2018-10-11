@@ -18,5 +18,8 @@
     "posthtml-extend": "^0.3.0",
     "posthtml-include": "^1.2.0",
     "sass": "^1.14.1"
+  },
+  "dependencies": {
+    "parcel-plugin-inlinesvg": "0.0.14"
   }
 }
