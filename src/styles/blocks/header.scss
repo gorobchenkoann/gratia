@@ -34,4 +34,9 @@
 
 .header__nav-link {
     @include header__link(16px);
+
+    &:hover,
+    &:focus {
+        color: $yellow;
+    }
 }
